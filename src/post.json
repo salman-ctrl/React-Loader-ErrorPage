@@ -1,0 +1,29 @@
+[
+    {
+        "title": "tutorial belajar react js lengkap",
+        "tags": [
+            "react",
+            "frontend"
+        ],
+        "date": "2024-10-24",
+        "isNew": true
+    },
+    {
+        "title": "meningkatkan performa di reactjs",
+        "tags": [
+            "react",
+            "frontend"
+        ],
+        "date": "2024-10-22",
+        "isNew": true
+    },
+    {
+        "title": "Cara menggunakan Chakra-UI di React js",
+        "tags": [
+            "react",
+            "CSS"
+        ],
+        "date": "2024-10-21",
+        "isNew": false
+    }
+]
