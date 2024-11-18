@@ -1,21 +1,16 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
+
 
 
 const SinglePost = () => {
-    const params = useParams();
-    const [post, setPosts] = useState(null);
+    const post = useLoaderData();
+    const [loading] = useState(!post);
 
-
-    useEffect(() => {
-        fetch(`https://jsonplaceholder.typicode.com/posts/${params.id}`)
-            .then((response) => response.json())
-            .then((json) => {
-                console.log("Data Di ambil :", json);
-                setPosts(json);
-
-            });
-    }, []);
+    if (loading) {
+        return <p>loading..</p>
+    }
 
     return (
         <>
